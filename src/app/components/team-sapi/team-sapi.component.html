@@ -1,0 +1,38 @@
+<app-banner title="Teams Api">
+</app-banner>
+
+<div class="container">
+
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">country_id</th>
+                <th scope="col">name </th>
+                <th scope="col">continent</th>
+
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of pageOfItems ">
+                <td>{{item.country.country_id}}</td>
+                <td>{{item.country.name}}</td>
+                <td>{{item.country.continent}}</td>
+                <td><img src="{{item.logo}}" alt=""></td>
+
+
+
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="card-footer pb-0 pt-3">
+        <jw-pagination [items]="T" (changePage)="onChangePage($event)" [pageSize]="5"></jw-pagination>
+    </div>
+
+    <div class="d-flex justify-content-center" *ngIf='!T'>
+        <app-loader></app-loader>
+    </div>
+</div>

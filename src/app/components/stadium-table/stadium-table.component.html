@@ -1,0 +1,38 @@
+<form action="">
+
+    <div class="form-group">
+        <input type="text-center" class="form-control" [(ngModel)]="term" name="value"
+            style="margin: 20px; width: 90% ; ;" placeholder="Search" />
+    </div>
+
+
+</form>
+
+
+
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">capacity</th>
+            <th scope="col">country</th>
+
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody id="adminid">
+        <tr *ngFor=" let item of  T">
+            <td>{{item.name}}</td>
+            <td>{{item.capacite}}</td>
+            <td>{{item.country}}</td>
+            <td>
+
+                <button class="btn btn-success " (click)="gotoDisplay(item._id)">display</button>
+                <button class="btn btn-warning" (click)="gotoEdit(item._id)">Edit</button>
+                <button class="btn btn-danger " (click)="deleteStadiumObj(item._id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

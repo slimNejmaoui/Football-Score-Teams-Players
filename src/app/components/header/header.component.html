@@ -1,0 +1,84 @@
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icon-close2 js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<header class="site-navbar py-4" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="site-logo">
+        <a routerLink="">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="ml-auto">
+        <nav class="site-navigation position-relative text-right" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+            <li class="active">
+              <a routerLink="" class="nav-link">Home</a>
+            </li>
+            <li><a routerLink="matches" class="nav-link">Matches</a></li>
+            <li><a routerLink="mymatches" class="nav-link">My Matches</a></li>
+            <li><a routerLink="players" class="nav-link">Players</a></li>
+            <li><a routerLink="AddData" class="nav-link">Data</a></li>
+
+            <li *ngIf="adminIsAuthenticated">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admin
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" routerLink="dashboard">dashboard</a>
+                  <a class="dropdown-item" routerLink="addmatch">Add match</a>
+                  <a class="dropdown-item" routerLink="addteam">Add Team</a>
+                  <a class="dropdown-item" routerLink="addpalyer">Add palyer</a>
+                  <a class="dropdown-item" routerLink="addStadium">add Stadium</a>
+                </div>
+              </div>
+            </li>
+            <li *ngIf="!userIsAuthenticated ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign In
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                  <a class="dropdown-item" routerLink="login">Login</a>
+                  <a class="dropdown-item" routerLink="registre">signup</a>
+                  <a class="dropdown-item" routerLink="registreAdmin">signup Admin</a>
+
+                </div>
+              </div>
+            </li>
+            <li *ngIf="userIsAuthenticated ">
+              <div class="dropdown pl-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Api
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                  <a class="dropdown-item" routerLink="apiTeams">Teams
+                    Api</a>
+                  <a class="dropdown-item" routerLink="weather">Weather
+                    Api</a>
+                </div>
+              </div>
+            </li>
+            <li><a *ngIf="userIsAuthenticated " routerLink="login" class="nav-link" (click)="onLogout()">Logout</a></li>
+          </ul>
+        </nav>
+
+        <a href="#"
+          class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white"><span
+            class="icon-menu h3 text-white"></span></a>
+      </div>
+    </div>
+  </div>
+</header>

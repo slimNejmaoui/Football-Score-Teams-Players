@@ -1,0 +1,24 @@
+<div class="hero overlay" style="background-image: url('assets/images/bg_3.jpg')">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9 mx-auto text-center">
+                <h1 class="text-white">My matchse</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+
+
+    <div *ngFor="let match of pageOfItems" style="margin-top: 150px;">
+        <app-scores [matchestable]="match"></app-scores>
+    </div>
+
+
+
+    <div class="card-footer pb-0 pt-3" style="margin-left: 300px;">
+        <jw-pagination [items]="matches" (changePage)="onChangePage($event)" [pageSize]="3"></jw-pagination>
+    </div>
+</div>

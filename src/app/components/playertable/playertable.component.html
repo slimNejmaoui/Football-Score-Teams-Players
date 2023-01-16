@@ -1,0 +1,30 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">numero de mailot</th>
+      <th scope="col">position</th>
+      <th scope="col">team</th>
+      <th scope="col">age</th>
+      <th scope="col">image</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of  T">
+      <td>{{player.name}}</td>
+      <td>{{player.numero}}</td>
+      <td>{{player.position}}</td>
+      <td>{{player.team}}</td>
+      <td>{{player.age}}</td>
+      <td><img [src]="player.avatar" style="width:100px ; height: 100px;"></td>
+
+      <td>
+        <button class="btn btn-success " (click)="gotoDisplay(player._id)">display</button>
+        <button class="btn btn-warning" (click)="gotoEdit(player._id)">Edit</button>
+        <button class="btn btn-danger " (click)="Delete(player._id)">Delete</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>

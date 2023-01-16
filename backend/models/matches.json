@@ -1,0 +1,44 @@
+[
+    {
+        "scoreone": 2,
+        "scoretwo": 2,
+        "teamone": "psg",
+        "teamtwo": "Man city"
+    },
+    {
+        "scoreone": 3,
+        "scoretwo": 2,
+        "teamone": "Manu",
+        "teamtwo": "barcelona"
+    },
+    {
+        "scoreone": 4,
+        "scoretwo": 2,
+        "teamone": "liverp",
+        "teamtwo": "arsenal"
+    },
+    {
+        "scoreone": 3,
+        "scoretwo": 0,
+        "teamone": "psg",
+        "teamtwo": "cite"
+    },
+    {
+        "scoreone": 3,
+        "scoretwo": 0,
+        "teamone": "est",
+        "teamtwo": "ca"
+    },
+    {
+        "scoreone": 3,
+        "scoretwo": 1,
+        "teamone": "rmd",
+        "teamtwo": "atm"
+    },
+    {
+        "scoreone": 3,
+        "scoretwo": 1,
+        "teamone": "chelsea",
+        "teamtwo": "tottenham"
+    }
+]

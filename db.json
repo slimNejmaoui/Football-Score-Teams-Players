@@ -1,0 +1,89 @@
+{
+  "matches": [
+    {
+      "id": 2,
+      "scoreone": "2",
+      "scoretwo": 2,
+      "teamone": "psg",
+      "teamtwo": "Man city"
+    },
+    {
+      "id": 3,
+      "scoreone": 3,
+      "scoretwo": "2",
+      "teamone": "Manu",
+      "teamtwo": "barcelona"
+    }
+  ],
+  "Tteams": [
+    {
+      "id": 2,
+      "Name": "Psg club",
+      "Stadium": "parc des princes",
+      "Country": "france paris",
+      "Owner": "Nasser khlifi"
+    },
+    {
+      "id": 3,
+      "Name": "manchester cite",
+      "Stadium": "Eletihad Stadium",
+      "Country": "england",
+      "Owner": "lmbarki"
+    },
+    {
+      "Name": "chelsea",
+      "Stadium": "chelsea stadium",
+      "Country": "england",
+      "Owner": "ibrahomovitch",
+      "id": 4
+    },
+    {
+      "Name": "liverpool",
+      "Stadium": "anfield",
+      "Country": "england",
+      "Owner": "slim",
+      "id": 5
+    }
+  ],
+  "playerTable": [
+    {
+      "id": 1,
+      "Name": "karim ben zima",
+      "numero": "numero 9",
+      "position": "forward",
+      "team": "real madrid",
+      "age": "35"
+    },
+    {
+      "Name": "zidane",
+      "numero": "numero 10",
+      "position": "midfender",
+      "team": "realmadrid",
+      "age": "35",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "firstName": "ali",
+      "lastName": "ben ali",
+      "email": "ali@gmail.com",
+      "pwd": "ali-1996",
+      "id": 1
+    },
+    {
+      "firstName": "slim",
+      "lastName": "nejmaoui",
+      "email": "slim@gmail.com",
+      "pwd": "slim",
+      "id": 2
+    },
+    {
+      "firstName": "samah",
+      "lastName": "chraiti",
+      "email": "samah@gmail.com",
+      "pwd": "samah",
+      "id": 3
+    }
+  ]
+}
